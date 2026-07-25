@@ -67,10 +67,15 @@ body {
     background-color: rgba(0, 0, 0, 0.25);
 }
 
-.control-btn.next {
-    background-color: rgba(0, 0, 0, 0.15);
-    background-image: url("arrow.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 24px 24px;
+.control-btn img {
+    width: 35px;   
+    height: 35px;  
+    display: block;
 }
+.control-btn.next img {
+    transform: translateX(5px);  
+}
+.control-btn.prev img {
+    transform: rotate(180deg) translateX(5px);  
+}
+
