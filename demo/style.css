@@ -13,7 +13,7 @@ body {
     padding: 0;
     overflow: hidden;
     /* Match .player so nothing visible outside the card */
-    background: linear-gradient(18deg, #A2060D, #000000);
+    background: linear-gradient(75deg, #2e0827, #5c0000, #000000);
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 }
 
 .player {
-    background: linear-gradient(18deg, #A2060D, #000000);
+    background: linear-gradient(75deg, #2e0827, #5c0000, #000000);
     padding: 25px 30px;
     border-radius: 15px;
     text-align: center;
@@ -78,4 +78,7 @@ body {
 .control-btn.prev img {
     transform: rotate(180deg) translateX(5px);  
 }
-
+.control-btn.play img {
+    width: 40px;   
+    height: 40px;  
+}
