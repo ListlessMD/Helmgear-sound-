@@ -1,26 +1,38 @@
-<style>
-    @import url('style.css');
-</style>
-<div class = player>
-    <img src = "images/cover.png" class="cover">
-    <h2> Now Playing </h2>
-    <h3 id="title">Song Title</h3>
-    <p id="artist">Artist Name</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helmgear Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player">
+        <div class="cover cover-placeholder" aria-hidden="true"></div>
 
-    <audio id="audio"></audio>
+        <h2>Now Playing</h2>
+        <h3 id="title">Song Title</h3>
+        <p id="artist">Artist Name</p>
 
-    <div class="controls">
-        <button id="prev">⏮️</button>
-        <button id="play">⏯️</button>
-        <button class="next">⏭️</button>
+        <audio id="audio"></audio>
+
+        <div class="controls">
+            <button type="button" class="control-btn prev" aria-label="Previous track"></button>
+            <button type="button" class="control-btn play" aria-label="Play or pause"></button>
+            <button type="button" class="control-btn next" aria-label="Next track"></button>
+        </div>
+
+        <div class="progress-container">
+            <input type="range" id="progress-bar" value="0">
+        </div>
+
+        <div class="volume">
+            <i class="vol-icon">🔊</i>
+            <input type="range" id="volume-bar" min="0" max="1" step="0.01" value="1">
+        </div>
     </div>
 
-    <div class="progress-container">
-        <input type="range" id="progress-bar" value="0">
-    </div>
 
-    <div class="volume">
-        <i class="vol-icon">🔊</i>
-        <input type="range" id="volume-bar" min="0" max="1" step="0.01" value="1">
-    </div> 
-</div>
+
+</body>
+</html>
