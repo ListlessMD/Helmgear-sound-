@@ -11,11 +11,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #A2060D, #000000)
+    background: linear-gradient(180deg, #a29f06, #ffffff)
 }
 
 .player {
-    background: #d79a00;
+    background: linear-gradient(18deg, #A2060D, #000000);
     padding: 25px 30px;
     border-radius: 15px;
     text-align: center;
